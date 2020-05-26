@@ -1,18 +1,16 @@
-def print_number():
-    numero = int(raw_input("please enter a number: "))
-    print(numero_prime(numero))
+def print_num():
+    num = int(raw_input("please enter a number: "))
+    print(num_prime(num))
 
-def numero_prime(numero):
-    if numero < 2:
+def num_prime(num):
+    if num < 2:
             return "not prime"
-    elif numero == 2:
+    elif num == 2:
             return "is prime"
     else:
-        numero > 2;
-        for i in range(2,numero):
-            if numero % i == 0:
+        for i in range(2,num):
+            if num % i == 0:
                 return "not prime"
-            else:
-                return "is prime"
+        return "is prime"
 
-print_number()
+print_num()
